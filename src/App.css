@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #282c34;
 }
 
 .App-logo {
@@ -35,4 +36,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container {
+  height: 800px;
+  width: 480px;
+  display: block;
+  overflow: hidden;
+}
+.container .row {
+  display: flex;
+}
+.container .row .item {
+   width: 240px;
+ }
+.gauge-label {
+  top:70px;
+  position: relative;
+}
+.gauge-value {
+  position: relative;
+  top: -42px;
 }
