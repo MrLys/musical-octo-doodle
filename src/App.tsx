@@ -50,8 +50,9 @@ const Gauge = ({
                    units,
                    fillFinder
                } : GaugeProps) => {
+
     const percentageValue = (value/100.0);
-    console.log((Math.PI / 2)*percentageValue);
+    const formattedValue = Math.round(value)
     const percentScale = scaleLinear()
         .domain([min, max])
         .range([0, 1])
